@@ -1,1 +1,7 @@
-spring.application.name=xiaoshanjijian
+spring:
+  application:
+    name: regulation-server
+  datasource:
+    url: jdbc:mysql://localhost:3306/regulation?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8mb4&useSSL=false&serverTimezone=GMT%2b8
+    username: root
+    password: 'regulation123'
