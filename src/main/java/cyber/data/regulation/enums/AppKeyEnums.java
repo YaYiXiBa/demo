@@ -1,10 +1,13 @@
 package cyber.data.regulation.enums;
 
+import lombok.Getter;
+
+@Getter
 public enum AppKeyEnums {
     ADJUDICATE("adjudicat", "cHWKREvp"),
-    SIMILARPUSH("similarPush", "xxx"),
-    SUPPLYEVIDENCE("supplyevidence", "xxx"),
-    COMPUTEAMOUNT("computeAmount", "xxx");
+    SIMILARITY_PUSH("similarPush", "xxx"),
+    SUPPLY_EVIDENCE("supplyevidence", "xxx"),
+    COMPUTE_AMOUNT("computeAmount", "xxx");
     private final String appKey;
     private final String appName;
 
@@ -12,12 +15,5 @@ public enum AppKeyEnums {
         this.appKey = appKey;
         this.appName = appName;
     }
-    
-    public String getAppKey() {
-        return appKey;
-    }
 
-    public String getAppName() {
-        return appName;
-    }
 }

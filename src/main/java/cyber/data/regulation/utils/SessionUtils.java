@@ -3,7 +3,7 @@ package cyber.data.regulation.utils;
 import java.util.UUID;
 
 public class SessionUtils {
-    public static String getSessionId() {
+    public static String createSessionId() {
         // 生成一个 UUID
         UUID newUuid = UUID.randomUUID();
         // 将 UUID 转换为字符串

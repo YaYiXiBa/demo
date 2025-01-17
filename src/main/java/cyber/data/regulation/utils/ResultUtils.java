@@ -49,4 +49,19 @@ public class ResultUtils {
     public static <T> Result<T> error(Integer code, String message) {
         return new Result<>(code, message, null);
     }
+
+
+    public static <T> Result<T> result(T flag) {
+        if (flag == null) {
+            return new Result<>(ERROR_CODE, "操作失败", null);
+        }
+        if(flag instanceof Boolean) {
+            if((Boolean) flag) {
+                return new Result<>(SUCCESS_CODE, "操作成功", null);
+            }else{
+                return new Result<>(ERROR_CODE, "操作失败", null);
+            }
+        }
+        return new Result<>(SUCCESS_CODE, "成功", flag);
+    }
 }
