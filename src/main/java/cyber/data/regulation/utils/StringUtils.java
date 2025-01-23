@@ -9,6 +9,5 @@ public class StringUtils {
         }
         StringBuilder sb = new StringBuilder();
         map.forEach( (k, v) -> System.out.println(k + "=" + v));
-        啊时代洛杉矶的
     }
 }
